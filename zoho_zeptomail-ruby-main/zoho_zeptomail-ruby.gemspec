@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/zohomail/zoho_zeptomail-ruby'
+  spec.metadata['source_code_uri'] = 'https://github.com/zohomail/zoho_zeptomail-ruby/tree/main/zoho_zeptomail-ruby-main'
   spec.metadata['changelog_uri'] = 'https://github.com/zohomail/zoho_zeptomail-ruby/blob/main/zoho_zeptomail-ruby-main/CHANGELOG.md'
   spec.metadata['rubygems_mfa_required'] = 'true'
 
