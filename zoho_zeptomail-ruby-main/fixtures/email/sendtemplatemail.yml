@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://zeptomail.zoho.com/v1.1/email/template
+    body:
+      encoding: UTF-8
+      string: '{"from":{"address":"leslie@zylker.com","name":"April"},"to":[{"email_address":{"address":"jon@zylker.com","name":"Ron"}},{"email_address":{"address":"jon@zylker.com","name":"Leslie"}}],"reply_to":[],"cc":[{"email_address":{"address":"april@zylker.com","name":"Chris"}}],"bcc":[{"email_address":{"address":"april@zylker.com","name":"Andy"}}],"mail_template_key":"2d6f.2a5f13c9.k1.c19333e0-75a8-11ef-b3f6-52540064429e.19204ad361e","merge_info":"{\"name\":\"name_value\",\"OTP\":\"OTP_value\",\"team\":\"team_value\",\"product_name\":\"product_name_value\"}"}'
+    headers:
+      User-Agent:
+      - Ruby on Rails ZohoZeptoMail
+      Accept:
+      - application/json
+      Authorization:
+      - "<AUTH>"
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      Host:
+      - zeptomail.zoho.com
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Server:
+      - ZGS
+      Date:
+      - Fri, 14 Mar 2025 07:07:09 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '204'
+      Connection:
+      - close
+      Set-Cookie:
+      - _zcsr_tmp=44afcc62-1780-4e17-a540-2892fec79414;path=/;SameSite=Strict;Secure;priority=high
+      - tm_csrf_cookie=44afcc62-1780-4e17-a540-2892fec79414;path=/;SameSite=None;Secure;priority=high
+      - zalb_04f0b6dd1f=09811d5b223b5ffba6ac037b63a4bc2d; Path=/; Secure; HttpOnly
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - private,no-cache,no-store,max-age=0,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Language:
+      - en-US
+      Strict-Transport-Security:
+      - max-age=63072000
+    body:
+      encoding: UTF-8
+      string: '{"error":{"code":"TM_3501","details":[{"code":"MTR_107","message":"Template
+        not found"}],"message":"Unprocessable Entity","request_id":"2d6f.2a5f13c9.m4.f25ba680-00a2-11f0-a7fd-525400a229b1.195937a70e8"}}'
+  recorded_at: Fri, 14 Mar 2025 07:07:09 GMT
+recorded_with: VCR 6.2.0
