@@ -1,7 +1,7 @@
 require 'rspec'
 require 'vcr'
 require 'json'
-require 'zoho_zeptomail'
+require 'zoho_zeptomail-ruby'
 
 VCR.configure do |config|
   config.cassette_library_dir = './fixtures'
